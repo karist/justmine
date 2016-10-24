@@ -1,0 +1,194 @@
+@font-face{
+	font-family: Calibri;
+	src: url('fonts/Calibri.ttf');
+}
+@page {
+	size: A5
+	font-family: Calibri;
+	font-size: 11pt;
+	text-align: justify;
+	margin-top: 2cm;
+	margin-bottom: 2cm;
+  header: page-header;
+  footer: page-footer;
+}
+@page:first {
+    margin-top: 10cm;
+    @bottom {
+        content: normal
+    }
+}
+@page body:left {
+	@top-left {
+    	content: counter(page);
+    	vertical-align: bottom; }
+  	@top-right {
+    	content: "Chapter " counter(chapter) ": " string(chapter);
+    	vertical-align: bottom; } 
+}
+@page body:right {
+  	@top-right {
+    	content: counter(page);
+    	vertical-align: bottom; }
+  	@top-left {
+    	content: counter(chapter) "." counter(section) " " string(section);
+    	vertical-align: bottom; } }
+	@page body {
+  		border-top: thin black solid; }
+	@page body:first {
+  		margin-top: 25%;
+  	@top-left {
+    	content: normal; }
+  	@top-right {
+    	content: normal; }
+  		border: none; }
+	@page body:blank {
+  	@top-left {
+    	content: normal; }
+  	@top-right {
+    	content: normal; }
+  	border: none; 
+}
+body {
+	width: 14.8cm;
+	height: 21cm;
+  font-family: Calibri;
+  font-size: 11pt;
+  text-align: justify; 
+}
+
+ul {
+  margin-left: 20pt;
+  margin-right: 20pt; }
+
+/*h1 {*/
+  /*page-break-before: right; */
+	/*page-break-after: always;*/
+/*}*/
+
+#chapNo{
+  font-size: 150px;
+  font-weight: bold;
+  text-align: right;
+  page-break-before: always;
+}
+
+.body {
+  counter-reset: page 1;
+  /*prince-page-group: start;*/
+  page: body; }
+  .body h1 {
+  	text-align: right;
+    margin-bottom: 1em;
+    string-set: chapter content();
+    counter-increment: chapter;
+    counter-reset: section; 
+    page-break-after: always;
+    /*page-break-before: always;*/
+    /*page-break-before: right;*/
+    /*prince-page-group: start;*/
+  }
+  .body h1::before {
+/*  	font-size: 150px;
+  	vertical-align: middle;
+  	line-height: normal;
+  	text-align: right;
+    content: counter(chapter) */}
+  .body h2 {
+    string-set: section content();
+    counter-increment: section; 
+  }
+  .body h2::before {
+    content: counter(chapter) "." counter(section) " "; 
+  }
+.col1 {
+	float:left;
+	width:46%;
+	margin-right: 2%;
+	}
+.col2 {
+	float:right;
+	width:46%;
+	margin-left: 2%;
+	font-style: italic;
+}
+
+div .nar{
+  	/*page-break-before: always;*/
+    page-break-after: always;
+}
+
+div.sub {
+  	/*page-break-before: always;*/
+    page-break-after: always;
+}
+table {
+    float: left;
+    /*page-break-before: avoid;*/
+    font-family: Calibri;
+    /*page-break-after: auto;*/
+    border-collapse: collapse;
+    width: 100%;
+    display:block;
+}
+.caption table {
+  /*page-break-after: avoid;*/
+  /*page-break-before: always;*/
+}
+.caption th {
+    white-space: nowrap;
+}
+
+.caption thead tr th {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.caption td{
+  vertical-align: middle;
+  text-align: left;
+}
+
+.caption th{
+	border: none;
+	text-align: left;
+}
+
+.garis{
+  border-bottom: solid;
+}
+
+.tabpreview table{
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.tabpreviw {
+  width: 100%;
+}
+
+.tabpreview th{
+   text-align: center;
+}
+
+.tabpreview table td{
+  width: 100%;
+  text-align: center;
+}
+
+@media print {
+  html, body {
+    width: 14.8cm;
+    height: 21cm;
+  }
+  
+}
+
+@media screen {
+  html, body {
+    width: 14.8cm;
+    height: 21cm;
+  }
+  
+}

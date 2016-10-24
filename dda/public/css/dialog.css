@@ -1,0 +1,93 @@
+#button {
+	border:1px solid #0c799e;
+	width:250px;
+	padding:10px;
+	font-size:16px;
+	font-weight:700;
+	color:#fff;
+	border-radius:3px;
+	background:linear-gradient(to bottom,#59d0f8 5%,#49c0e8 100%);
+	cursor:pointer;
+}
+#button:hover {
+	background:linear-gradient(to bottom,#49c0e8 5%,#59d0f8 100%)
+}
+#dialog input[type=text] {
+	margin-top:5px;
+	margin-bottom:20px;
+	width:96%;
+	border-radius:5px;
+	border:1;
+	padding:5px 0;
+}
+.smaller{
+	margin-top:5px;
+	margin-bottom:20px;
+	width:45%;
+	border-radius:5px;
+	border:1;
+	padding:5px 0;	
+}
+.field_wrapper div{ 
+	margin-bottom:10px;
+}
+.add_button{ 
+	margin-top:10px; 
+	margin-left:10px;
+	vertical-align: middle;
+	float: right;
+}
+.remove_button{ 
+	margin-top:10px; 
+	margin-left:10px;
+	vertical-align: text-bottom;
+	float: right;
+}
+#stubname,#stubindo,#stubeng {
+	padding-left:10px
+}
+input[type=submit] {
+	width:30%;
+	border:1px solid #59b4d4;
+	background:#0078a3;
+	color:#eee;
+	padding:3px 0;
+	border-radius:5px;
+	margin-left:33%;
+	cursor:pointer;
+}
+input[type=submit]:hover {
+	border:1px solid #666;
+	background:#555;
+	color:#fff;
+}
+.ui-dialog .ui-dialog-content {
+	padding:2em;
+}
+.scrollbar
+{
+	float: left;
+	height: 200px;
+	width: 100%;
+	overflow-y: scroll;
+	margin-bottom: 20px;
+}
+
+.force-overflow
+{
+	min-height: 200px;
+}
+
+.sub{
+	margin-left: 10px;
+}
+.sub2{
+	margin-left: 20px;
+}
+.sub3{
+	margin-left: 30px;
+}
+.sub4{
+	margin-left: 40px;
+}
+

@@ -1,0 +1,180 @@
+input[readonly] {
+    border: none;
+    background-color: transparent;
+    width: 90%;
+    /* any other styles */
+}
+
+.no-border td{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+tfoot {
+    border-top: black;
+    border-bottom: black;
+}
+
+table td{
+  height: 15px;
+}
+
+table th {
+   text-align: center;   
+}
+
+#tabController{
+  line-height:40px;
+  /*background-color: #eeeeee;*/
+  width: 20%;
+  float: left;
+  padding: 5px;
+}
+
+#con{
+  /*background-color: #ccc;*/
+}
+
+#section{
+  width: 60%;
+  float: left;
+  padding: 10px;
+  /*background-color: #ccc;*/
+  background-color:#f2f2f2;
+  border-radius: 25px;
+}
+
+#display{
+  width:100%;
+  background-color: white;
+}
+
+#templatelist{
+  /*line-height:40px;*/
+  /*background-color: #F1F1F1;*/
+  width: 20%;
+  float: right;
+  padding: 5px;
+  overflow: hidden;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.tablePreview table{
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.tablePreview table td{
+  /*border-right: solid;*/
+  /*border-bottom: solid;*/
+  /*border-top: solid;*/
+  /*border-left: solid;*/
+}
+
+#tabhead {
+  text-align: left;
+  width: 100%;
+}
+
+#tabhead td {
+  border-top: solid;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+}
+
+#tabhead input{
+  width: 100%;
+}
+
+#tabhead td.garis{
+  border-bottom: solid;
+}
+
+#tab {
+}
+
+#tab td{
+  width: 75px;
+  /*border-right-style: none;*/
+  /*border-left: none;*/
+}
+
+#tab th{
+  width:100px;
+  height:15px;
+  text-align:center;
+  vertical-align:middle;
+  /*background-color:#ccc;*/
+  /*border-top:1px solid black;*/
+  /*border-bottom:1px solid black;*/
+}
+
+#tab .colnum{
+  /*border-bottom: 1px solid black;*/
+}
+
+#tab tfoot td{
+  /*border-top: 1px solid black;*/
+  /*border-bottom: 1px double black;*/
+}
+
+#tab th.highlighted {
+  background-color:#999;
+}
+
+* {
+    font-family:Calibri
+}
+ 
+.editableTable {
+    /*border:solid 1px;*/
+    width:100%
+}
+ 
+.editableTable td {
+    /*border:solid 1px;*/
+}
+ 
+.editableTable .cellEditing {
+    padding: 0;
+}
+ 
+.editableTable .cellEditing input[type=text]{
+    width:100%;
+    /*border:0;*/
+    background-color:rgb(255,253,210);  
+}
+
+.divclicked{
+  border: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+}
+
+#dataTable.classy {
+    color: red;
+}
+
+#tabhead td{
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+th{
+    /*border-right: 1px solid black;*/
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    /*border-left: 1px solid black;*/
+    }
+td{
+/*    border: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;*/
+}
